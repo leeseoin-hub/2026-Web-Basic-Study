@@ -15,6 +15,7 @@ body {
 .container {
     /* 5. 가로 정렬 */
     display: flex;
+    border-radius: 10px;
     /* 4. 10px만큼 둥글게 */
     overflow: hidden;
     /* 2. 가로 500px 세로 300px */
@@ -27,9 +28,9 @@ body {
 /* 📌 .item 구성 */
 .container .item {
     flex: 1; 
-    display: felx;
-    justify-items: center;
-    align-items: center;
+    display: flex;
+    justify-items: center;/*5. 가로 정렬 */
+    align-items: center;/*5. 세로 정렬*/
 }
 
 /* 📌 이미지 삽입 및 스타일링 */
@@ -41,15 +42,19 @@ body {
 .container .item .content-wrapper {
     box-sizing: border-box;
     /*  1. 패딩값 20px */
+    padding: 20px;
     /* 2. 너비 스스로 정해보기! */
+    width: 100%;
 }
 
 .container .item .content-wrapper .tag {
     /* 3. 색 설정하기! */
+    color: #3498db
 }
 
 .container .item .content-wrapper .title {
     /* 3. 글자 크기 30px */
+    font-size: 30px;
     margin-top: 2px;
     font-weight: 600;
 }
